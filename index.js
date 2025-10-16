@@ -93,8 +93,7 @@ Monitored Assets: ${this.activeAssets.join(', ')}
         // Assets command
         this.bot.onText(/\/assets/, (msg) => {
             const chatId = msg.chat.id;
-            const assetList = this.activeAssets.map(asset => `• ${asset}-PERP`).join('
-');
+            const assetList = this.activeAssets.map(asset => `• ${asset}-PERP`).join('');
             
             this.bot.sendMessage(chatId, `**Aset yang dipantau:**
 ${assetList}`, { parse_mode: 'Markdown' });
