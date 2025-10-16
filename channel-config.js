@@ -2,7 +2,7 @@
 class ChannelManager {
     constructor(bot) {
         this.bot = bot;
-        this.channelId = process.env.CHANNEL_ID; // @your_channel_username atau chat_id
+        this.channelId = process.env.CHANNEL_ID; 1003126108620
     }
 
     async sendToChannel(message) {
