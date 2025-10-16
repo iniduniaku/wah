@@ -313,8 +313,7 @@ ${marketData ? `
 ${summary.topVolumes.map(v => `• ${v.coin}: $${v.volume}`).join('')}
 
 **Largest Trades:**
-${summary.largestTrades.map(t => `• ${t.coin}: $${t.value} (${t.side})`).join('
-')}
+${summary.largestTrades.map(t => `• ${t.coin}: $${t.value} (${t.side})`).join('')}
 
 **Market Stats:**
 • Total Volume: $${summary.totalVolume}
