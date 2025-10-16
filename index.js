@@ -310,8 +310,7 @@ ${marketData ? `
 📊 **Daily Hyperliquid Summary**
 
 **Top Volumes (24h):**
-${summary.topVolumes.map(v => `• ${v.coin}: $${v.volume}`).join('
-')}
+${summary.topVolumes.map(v => `• ${v.coin}: $${v.volume}`).join('')}
 
 **Largest Trades:**
 ${summary.largestTrades.map(t => `• ${t.coin}: $${t.value} (${t.side})`).join('
