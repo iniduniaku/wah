@@ -552,8 +552,7 @@ ${this.getMarketSentiment(trade.coin, side)}
         const summaryMessage = `📊 *Hyperliquid Market Update*
 
 💹 *Price Movements (4h):*
-${summary.priceMovements.map(p => `• ${p.coin}: ${p.change} (${p.price})`).join('
-')}
+${summary.priceMovements.map(p => `• ${p.coin}: ${p.change} (${p.price})`).join('')}
 
 🐋 *Whale Activity:*
 • Total Volume: $${summary.whaleVolume}
