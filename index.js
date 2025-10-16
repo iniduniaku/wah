@@ -303,8 +303,7 @@ ${assetList}
 ⚡ *Trade Metrics:*
 • Estimated Leverage: ${marketData.estimatedLeverage}x
 • Liquidation Risk: ${marketData.liquidationRisk}
-• Market Impact: ${marketData.marketImpact}` : '
-⏳ Loading market data...'}
+• Market Impact: ${marketData.marketImpact}` : '⏳ Loading market data...'}
 
 🕐 *Time:* ${new Date(trade.time).toLocaleString('id-ID')}
 🔗 *Trade:* [View on Hyperliquid](${tradeLink})
