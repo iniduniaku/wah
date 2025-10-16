@@ -119,8 +119,7 @@ Price Cache: ${this.priceCache.size} assets
         // Assets command
         this.bot.onText(/\/assets/, (msg) => {
             const chatId = msg.chat.id;
-            const assetList = this.activeAssets.map(asset => `• ${asset}-PERP`).join('
-');
+            const assetList = this.activeAssets.map(asset => `• ${asset}-PERP`).join('');
             
             const assetsMessage = `*Aset yang dipantau:*
 ${assetList}
@@ -600,8 +599,7 @@ ${summary.priceMovements.map(p => `• ${p.coin}: ${p.change} (${p.price})`).joi
         const summaryMessage = `📈 *Daily Hyperliquid Summary*
 
 🏆 *Top Performers:*
-${summary.topPerformers.map(p => `• ${p.coin}: ${p.change}`).join('
-')}
+${summary.topPerformers.map(p => `• ${p.coin}: ${p.change}`).join('')}
 
 🐋 *Whale Highlights:*
 • Biggest Trade: $${summary.biggestTrade}
