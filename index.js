@@ -516,8 +516,7 @@ ${this.getMarketSentiment(trade.coin, side)}
             console.error('Max reconnection attempts reached');
             
             // Notify admin and channel
-            const errorMessage = '🚨 *Bot Connection Lost*
-Bot memerlukan restart manual. Hubungi admin.';
+            const errorMessage = '🚨 *Bot Connection Lost* Bot memerlukan restart manual. Hubungi admin.';
             if (process.env.ADMIN_CHAT_ID) {
                 this.bot.sendMessage(process.env.ADMIN_CHAT_ID, errorMessage, { parse_mode: 'Markdown' });
             }
